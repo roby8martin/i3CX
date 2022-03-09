@@ -74,14 +74,14 @@ Yes()
   sudo apt -y install 3cxpbx
 
 
-  # Modifica i file di configurazione di Nginx
-  printf '\nCreo un backup per il file di configurazione di Nginx\n'
-  cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_backup
+  # Copiare file template per i telefoni fxs (cordless)
+  printf '\nSto copiando i template per i telefoni FXS (cordelss) mancanti\n'
+  cp -r template/fxs/* /var/lib/3cxpbx/Instance1/Data/Http/Templates/fxs/
 
  
   printf "\\e[0;42m${bold}Installazione completata con successo ☑️  !${normal}\\e[0m\n\n"
 
-  printf "${bold}Usate un browser e inserite l'ip pubblico (se su hosting in cloud) o l'ip privato (se locale) usando la porta \\e[1;31m5015\\e[0m e \\e[1;31mL'HTTP\\e[0m ${normal}"
+  printf "${bold}Usate un browser e inserite l'ip pubblico (se su hosting in cloud) o l'ip privato (se locale) usando la porta \\e[1;31m5015\\e[0m e \\e[1;31mL'HTTP\\e[0m ${normal} \n\n"
 
   printf "${bold}Developed by  \e]8;;https://github.com/roby8martin\e\\ \\e[0;34mroby8martin\\e[0m \e]8;;\e\\  for developers ${normal} \n\n"
 }
@@ -148,14 +148,14 @@ if [ ${RISPOSTA} = "y" ] || [ ${RISPOSTA} = "Y" ]; then
   sudo apt -y install 3cxpbx
 
 
-  # Modifica i file di configurazione di Nginx
-  printf '\nCreo un backup per il file di configurazione di Nginx\n'
-  cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default_backup
+  # Copiare file template per i telefoni fxs (cordless)
+  printf '\nSto copiando i template per i telefoni FXS (cordelss) mancanti\n'
+  cp -r template/fxs/* /var/lib/3cxpbx/Instance1/Data/Http/Templates/fxs/
 
  
   printf "\\e[0;42m${bold}Installazione completata con successo ☑️  !${normal}\\e[0m\n\n"
 
-  printf "${bold}Usate un browser e inserite l'ip pubblico (se su hosting in cloud) o l'ip privato (se locale) usando la porta \\e[1;31m5015\\e[0m e \\e[1;31mL'HTTP\\e[0m ${normal}"
+  printf "${bold}Usate un browser e inserite l'ip pubblico (se su hosting in cloud) o l'ip privato (se locale) usando la porta \\e[1;31m5015\\e[0m e \\e[1;31mL'HTTP\\e[0m ${normal} \n\n"
 
   printf "${bold}Developed by  \e]8;;https://github.com/roby8martin\e\\ \\e[0;34mroby8martin\\e[0m \e]8;;\e\\  for developers ${normal} \n\n"
 

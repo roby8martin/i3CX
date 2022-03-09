@@ -29,7 +29,7 @@ Una Macchina Linux con:
 Una volta **soddisfatti i requisiti**:
   - Usare il seguente script per l'installazione **automatica**:
   ```
-  git clone https://github.com/roby8martin/LNPM && cd LNPM && ./install.sh -y
+  git clone https://github.com/roby8martin/i3CX && cd i3CX && ./install.sh -y
   ```
   
   
